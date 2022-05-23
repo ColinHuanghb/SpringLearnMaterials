@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+<!--    <bean id="phone" class="neu.edu.beans.IPhone">-->
+<!--        <property name="price" value="1234.5"></property>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    scope 默认为 singleton&ndash;&gt;-->
+<!--    <bean id="teacher" class="neu.edu.beans.Teacher" scope="prototype">-->
+<!--        <property name="name" value="HHB"></property>-->
+<!--        <property name="phone">-->
+<!--            <ref bean="phone"></ref>-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    直接进行一个autoscan-->
+    <context:component-scan base-package="neu.edu.aop"></context:component-scan>
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+</beans>
